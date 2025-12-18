@@ -1,0 +1,115 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f4f5f7;
+    padding: 20px 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header #logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(131, 8, 67);
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #212121;
+    line-height: 1.8;
+}
+
+header nav ul li a:hover{
+    color: rgb(131, 8, 67);
+}
+
+header nav ul li input{
+    height: 28px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+header nav ul li input:focus{
+    outline: 3px solid rgba(131, 8, 67, 0.427);
+}
+
+#btnSearch, #addPatient{
+    background-color: rgb(131, 8, 67);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnSearch:hover{
+    background-color: #ffffff;
+    color: rgb(131, 8, 67);
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 20px; 
+}
+
+.container label{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin: 0 0 15px 0;
+    display: inline-block;
+    width: 85px;
+}
+
+.container label[for="male"], .container label[for="female"]{
+    margin: 0;
+    width: fit-content !important;
+}
+
+.container input, .container select{
+    height: 28px;
+    border: none;
+    outline: 1px solid rgba(131, 8, 67, 0.427);
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #f4f5f7;
+}
+
+.container input:focus{
+    outline: 3px solid rgba(131, 8, 67, 0.427);
+}
+
+.container input[type="radio"]{
+    height: fit-content !important;
+    outline: none;
+}
+
+#addPatient:hover{
+    background-color:  rgba(131, 8, 67, 0.682);
+}
